@@ -1,22 +1,13 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 
 import './Controls.scss';
 import { LayerItemType } from "../../types/LayerItem";
-import { useEffect } from "react";
 
 type Props = {
   buttons: LayerItemType[];
 }
 export const Controls: React.FC<Props> = ({ buttons }) => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    return () => {
-      console.log('navigate')
-      navigate('..')
-    }
-  }, [])
   
   return (
     <div className="controls">
