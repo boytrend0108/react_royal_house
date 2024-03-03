@@ -12,8 +12,7 @@ type Props = {
 export const LayerItem: React.FC<Props> = ({ image, delay }) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const { pathname } = useLocation();
-  const isActive =
-    pathname.includes(image) && pathname !== '/';
+  const isActive = pathname.includes(image) && pathname !== '/';
   
   useEffect(() => {
     setTimeout(() => {
