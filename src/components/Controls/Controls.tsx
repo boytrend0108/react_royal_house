@@ -13,7 +13,8 @@ export const Controls: React.FC<Props> = ({ buttons }) => {
 
   useEffect(() => {
     return () => {
-      navigate('/')
+      console.log('navigate')
+      navigate('..')
     }
   }, [])
   

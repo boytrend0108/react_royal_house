@@ -13,6 +13,7 @@ const LAYERS: LayerItemType[] = [
 ];
 
 function App() {
+  console.log('render app')
   return (
     <div className="box">
       <h1>Клінкерний фасад</h1>
